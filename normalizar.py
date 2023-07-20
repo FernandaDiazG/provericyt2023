@@ -12,15 +12,15 @@ for column in df_z_scaled.loc[:, 'delta':'high_gamma']:
                            df_z_scaled[column].mean()) / df_z_scaled[column].std()
 
 
-#export DataFrame to text file
-with open('datos.txt', 'a') as f:
-    df_string = df.to_csv(index=False)
-    f.write(df_string)
+# #export DataFrame to text file
+# with open('datos.txt', 'a') as f:
+#     df_string = df.to_csv(index=False)
+#     f.write(df_string)
 
-#export DataFrame to text file
-with open('datosz.txt', 'a') as f:
-    df_string = df_z_scaled.to_csv(index=False)
-    f.write(df_string)
+# #export DataFrame to text file
+# with open('datosz.txt', 'a') as f:
+#     df_string = df_z_scaled.to_csv(index=False)
+#     f.write(df_string)
   
 # graficar 
 
