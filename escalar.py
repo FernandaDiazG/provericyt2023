@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('datosz.txt', sep=',', header=0)
+df = pd.read_csv('datosn.txt', sep=',', header=0)
 
 df_esc = pd.DataFrame(df.loc[:, 'signal_strength':'meditation'])
 

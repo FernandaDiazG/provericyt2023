@@ -1,7 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import numpy as np
 
 df = pd.read_csv('datosesc.txt', sep=',', header=0)
+
+print(df.dtypes)
 
 attention = ['attention',
           'low_beta',
