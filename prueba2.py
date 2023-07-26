@@ -33,7 +33,7 @@ def normality_test(lista):
         sns.displot(lista)
         plt.show()
 
-df = pd.read_csv('datos.txt', sep=',', header=0)
+df = pd.read_csv('datosln.txt', sep=',', header=0)
 
 for col in df.loc[:, 'delta':'high_gamma']:
     normality_test(df[col])
