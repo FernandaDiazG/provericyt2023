@@ -4,7 +4,7 @@ import seaborn as sns
 from itertools import cycle
 from matplotlib.widgets import Slider
 
-df = pd.read_csv('datosesc.txt', sep=',', header=0)
+df = pd.read_csv('d1/datosesc.txt', sep=',', header=0)
 
 attention = ['attention',
           'low_beta',

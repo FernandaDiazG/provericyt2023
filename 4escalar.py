@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('datosn.txt', sep=',', header=0)
+df = pd.read_csv('d3/datosn.txt', sep=',', header=0)
 
 df_esc = pd.DataFrame(df.loc[:, 'signal_strength':'meditation'])
 
@@ -14,4 +14,4 @@ for col in df.loc[:, 'delta':'high_gamma']:
     y = m * (x - min)
     df_esc[col] = y
 
-df_esc.to_csv('datosesc.txt', index=False)
+df_esc.to_csv('d3/datosesc.txt', index=False)

@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from itertools import cycle
 
-df = pd.read_csv('datosesc.txt', sep=',', header=0)
+df = pd.read_csv('d1/datosesc.txt', sep=',', header=0)
 
 fig, axes = plt.subplots(nrows=2, ncols=5)
 colors = cycle(sns.color_palette('hls', 10))
