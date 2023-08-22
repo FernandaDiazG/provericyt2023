@@ -24,5 +24,7 @@ model = (
     )
 
 df_reg['model'] = model
+df_reg['exp'] = np.exp(model)
+df_reg['diff'] = y - model
 
-df_reg.to_csv('d1/modelo5.txt', index=False)
+df_reg.to_csv('d1/modelo4.txt', index=False)
